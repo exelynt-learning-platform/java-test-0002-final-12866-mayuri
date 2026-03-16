@@ -1,22 +1,22 @@
 public class NumberPattern {
 
+    private static final int PYRAMID_HEIGHT = 5;
+
     public static void main(String[] args) {
 
-        int n = 5;
+        for (int i = 1; i <= PYRAMID_HEIGHT; i++) {
 
-        for (int i = 1; i <= n; i++) {
-
-            // Print spaces
-            for (int j = i; j < n; j++) {
+            // Print leading spaces
+            for (int j = i; j < PYRAMID_HEIGHT; j++) {
                 System.out.print("  ");
             }
 
-            // Increasing numbers
+            // Print increasing numbers
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
             }
 
-            // Decreasing numbers
+            // Print decreasing numbers
             for (int j = i - 1; j >= 1; j--) {
                 System.out.print(j + " ");
             }
